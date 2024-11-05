@@ -1,5 +1,5 @@
 {% set name = "databind.core" %}
-{% set version = "1.4.0" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/databind.core-{{ version }}.tar.gz
-  sha256: ae6e13da4e30ebff447e003f92c0f2fe38b70f03502ef9e2afed24991d6b54bc
+  sha256: 7e3765ac51b84fccdf45bc1ed4da7f6f69a07088206fb047885d6464292836be
 
 build:
   number: 0
@@ -21,11 +21,9 @@ requirements:
     - python >=3.7,<4.0
   run:
     - deprecated >=1.2.12,<2.0.0
-    - nr.optional >=0.1.1,<1.0.0
-    - nr.parsing.date >=1.0.1,<2.0.0
-    - nr.preconditions >=0.0.4,<1.0.0
-    - nr.stream >=0.1.1,<1.0.0
+    - nr.util >=0.8.8,<1.0.0
     - python >=3.7,<4.0
+    - typeapi >=0.1.5,<0.2.0
     - typing-extensions <4.0.0,>=3.10.0
 
 test:
